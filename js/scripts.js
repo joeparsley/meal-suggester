@@ -3,7 +3,7 @@
 });
 
 
-function recipe(base, protein, veggies, sauce){
+function recipe(base, protein, veggie, sauce){
   this.base = base;
   this.protein = protein;
   this.veggie = veggie;
@@ -69,18 +69,19 @@ recipe.prototye.cookBase = function(base){
 }
 recipe.protype.cookProtein = function(protein){
   for(i=0; i<protein.length; i++){
+    var proteinInstruction;
     if(protein[i]==="beef"){
-      var proteinInstruction = userInput.beef;
+      proteinInstruction += "<p>" + userInput.beef + "</p>";
     }else if(protein[i]==="pork"){
-      var proteinInstruction = userInput.pork;
+      proteinInstruction += "<p>" + userInput.pork + "</p>";
     }else if(protein[i]==="chicken"){
-      var proteinInstruction = userInput.chicken;
+      proteinInstruction += "<p>" + userInput.chicken + "</p>";
     }else if(protein[i]==="tofu"){
-      var proteinInstruction = userInput.tofu;
+      proteinInstruction += "<p>" + userInput.tofu + "</p>";
     }else if(protein[i]==="tempeh"){
-      var proteinInstruction = userInput.tempeh;
+      proteinInstruction += "<p>" + userInput.tempeh + "</p>";
     }else if(protein[i]==="soyCurls"){
-      var proteinInstruction = userInput.soyCurl;
+      proteinInstruction += "<p>" + userInput.soyCurl + "</p>";
     }
   }
 }
