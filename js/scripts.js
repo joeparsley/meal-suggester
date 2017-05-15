@@ -84,4 +84,5 @@ recipe.protype.cookProtein = function(protein){
       proteinInstruction += "<p>" + userInput.soyCurl + "</p>";
     }
   }
+  return proteinInstruction;
 }
