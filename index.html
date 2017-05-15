@@ -1,14 +1,167 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title></title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Meal Suggester</title>
   </head>
   <body>
-    <h1>header</h1>
 
-    <div id="output">
+    <div class="container">
+      <div class="jumbotron">
+      <h1>Meal Suggester</h1>
+      </div>
+      <div class="row">
+        <form id="baseOptions">
+        <div class="form-group">
+          <div class="col-sm-4">
+            <h3>What base do you have?</h3>
+            <div class="radio">
+              <label>
+                <input type="radio" name="base" value="rice" checked>
+                Rice
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="base" value="beans">
+                Beans
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="base" value="chickpeas">
+                Chickpeas
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="base" value="potatoes">
+                Potatoes
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="base" value="pasta">
+                Pasta
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="base" value="quinoa">
+                Quinoa
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <form id="proteinOptions">
+          <div class="form-group">
+          <h3>What protein do you have?</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="protein" value="beef" checked>
+            Beef
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="protein" value="pork">
+              Pork
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="protein" value="chicken">
+              Chicken
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="protein" value="tofu">
+              Tofu
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="protein" value="tempeh">
+              Tempeh
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="protein" value="soyCurls">
+              Soy Curls
+            </label>
+          </div>
+        </div>
+      </div>
+        <div class="col-sm-4">
+          <form id="sauceOptions">
+          <div class="form-group">
+          <h3>What sauce do you have?</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="sauce" value="bbq" checked>
+            BBQ
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="sauce" value="curry">
+              Curry
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="sauce" value="teryaki">
+              Teryaki
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="sauce" value="alfredo">
+              Alfredo
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="sauce" value="marinara">
+              Marinara
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <form id="vegOptions">
+          <div class="form-group">
+            <h3>What vegetables do you have?</h3>
+            <input type="checkbox" name="veg" value="tomatoes">Tomatoes<br>
+            <input type="checkbox" name="veg" value="broccoli">Broccoli<br>
+            <input type="checkbox" name="veg" value="avacado">Avacado<br>
+            <input type="checkbox" name="veg" value="mushrooms">Mushrooms<br>
+            <input type="checkbox" name="veg" value="spinach">Spinach<br>
+            <input type="checkbox" name="veg" value="carrots">Carrots<br>
+            <input type="checkbox" name="veg" value="redOnion">Red Onion<br>
+            <input type="checkbox" name="veg" value="whiteOnion">White Onion<br>
+            <input type="checkbox" name="veg" value="cauliflower">Cauliflower<br>
+            <input type="checkbox" name="veg" value="greenPepper">Green Pepper<br>
+            <input type="checkbox" name="veg" value="bellPepper">Bell Pepper<br>
+            <input type="checkbox" name="veg" value="celery">Celery<br>
+            <input type="checkbox" name="veg" value="garlic">Garlic<br>
+            <input type="checkbox" name="veg" value="zuccini">Zuccini<br>
+            <input type="checkbox" name="veg" value="brusselsSprouts">Brussels Sprouts<br>
+            <input type="checkbox" name="veg" value="kale">Kale<br>
+            <input type="checkbox" name="veg" value="corn">Corn<br>
+            <input type="checkbox" name="veg" value="cucumber">Cucumber<br>
+          </div>
+        </div>
+      </div>
 
+  
     </div>
   </body>
 </html>
