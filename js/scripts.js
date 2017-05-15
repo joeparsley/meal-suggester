@@ -78,7 +78,7 @@ recipe.protype.cookProtein = function(protein){
       var proteinInstruction = userInput.tofu;
     }else if(protein[i]==="tempeh"){
       var proteinInstruction = userInput.tempeh;
-    }else if(protein[i]==="soyCurl"){
+    }else if(protein[i]==="soyCurls"){
       var proteinInstruction = userInput.soyCurl;
     }
   }
