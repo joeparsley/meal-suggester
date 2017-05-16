@@ -11,7 +11,7 @@ $(document).ready(function(){
   })
 
 
-  $("form#baseOptions").submit(function(event){
+  $("form#vegOptions").submit(function(event){
     event.preventDefault();
     clearfield();
     userInput.Veggie = [];

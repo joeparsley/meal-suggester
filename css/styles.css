@@ -8,13 +8,10 @@ border-style: outset;
 border-width: thick;
 border-color: #E15E32;
 border-radius: 20px;
-
 }
-
 
 .container-fluid {
 padding-top: 15px;
-
 }
 
 .radio {
@@ -41,18 +38,18 @@ h3 {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
-#infoRow {
-  display: none;
+#instruction{
   background: rgba(92,50,62,0.5);
   border-style: outset;
   border-width: thick;
   border-color: #E5F04C;
   border-radius: 20px;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-bottom: 20px;
-  margin-left: 30px;
-  width: 500px;
+  max-width: 750px;
+}
+#infoRow {
+  display: none;
 }
 
 
@@ -83,7 +80,7 @@ h3 {
   border-width: thick;
 }
 
-#baseStyles {
+#baseStyles, #proteinStyles, #sauceStyles {
   background: rgba(92,50,62,0.5);
   border-style: outset;
   border-width: thick;
@@ -91,27 +88,8 @@ h3 {
   border-radius: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-left: 30px;
-}
-
-#proteinStyles {
-  background: rgba(92,50,62,0.5);
-  border-style: outset;
-  border-width: thick;
-  border-color: #E5F04C;
-  border-radius: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-#sauceStyles {
-  background: rgba(92,50,62,0.5);
-  border-style: outset;
-  border-width: thick;
-  border-color: #E5F04C;
-  border-radius: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  max-width: 450px;
+  height: 261px;
 }
 
 #veggieStyles {
@@ -122,6 +100,7 @@ h3 {
   border-radius: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
+  max-width: 750px;
 }
 
 #outputStyles {
@@ -132,4 +111,9 @@ h3 {
   border-radius: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.columns{
+  column-count: 2;
+  list-style: none;
 }
