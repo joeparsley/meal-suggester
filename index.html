@@ -8,13 +8,13 @@
     <title>Meal Suggester</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
       <!--HEADER-->
       <div class="jumbotron">
       <h1>Meal Suggester</h1>
       </div>
       <div class="row" id="row1">
-        <div class="col-md-6 col-sm-6 col-md-offset-3 col-sm-offset-3">
+        <div class="col-md-6 col-sm-6 col-md-offset-3 col-sm-offset-3" id="welcome">
           <h3>Well hey there!</h3>
           <p>you're probably hungry and don't know what to make huh? Well you're in luck! Click on the button bellow to start entering the ingredients you have on hand, and this app will suggest something tasty for you to eat!
           </p>
@@ -25,7 +25,7 @@
         <!-- USER INPUT FOR BASE OPTION -->
         <form id="baseOptions">
           <div class="form-group">
-            <div class="col-sm-4">
+            <div class="col-sm-4" id="baseStyles">
               <h3>What base do you have?</h3>
               <div class="radio">
                 <label>
@@ -69,7 +69,7 @@
           <div class="col-sm-4">
             <!-- USER INPUT FOR PROTEIN OPTIONS -->
 
-              <div class="form-group">
+              <div class="form-group" id="proteinStyles">
                 <h3>What protein do you have?</h3>
                 <div class="radio">
                   <label>
@@ -113,7 +113,7 @@
           <div class="col-sm-4">
             <!-- USER INPUT FOR SAUCE OPTIONS -->
 
-              <div class="form-group">
+              <div class="form-group" id="sauceStyles" >
                 <h3>What sauce do you have?</h3>
                 <div class="radio">
                   <label>
@@ -156,7 +156,7 @@
         <div class="col-sm-4">
           <!-- USER INPUT FOR VEGGIE OPTIONS -->
           <form id="vegOptions">
-          <div class="form-group">
+          <div class="form-group" id="veggieStyles">
             <h3>What vegetables do you have?</h3>
             <input type="checkbox" name="veg" value="tomatoes">Tomatoes<br>
             <input type="checkbox" name="veg" value="broccoli">Broccoli<br>
@@ -181,7 +181,7 @@
       </div>
       <!-- USER OUTPUT FIELD -->
       <div class="row" id="row4">
-        <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="col-md-12 col-sm-12 col-xs-12" id="outputStyles">
           <h1><span id="recipe_name"><span></h1>
           <p><span id="baseOutput"></span></p>
           <p><span id="proteinOutput"></span></p>

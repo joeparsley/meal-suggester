@@ -7,7 +7,7 @@ $(document).ready(function(){
   $("#row1").hide();
   $("#row2").show();
   $("#row3").show();
-  $("#row4").show();
+
   })
 
 
@@ -31,6 +31,7 @@ $(document).ready(function(){
     userInput.cookProtein(userInput.Protein);
     userInput.veggies(userInput.Veggie);
     userInput.prepareSauce(userInput.Sauce);
+    $("#row4").show();
   });
 });
 

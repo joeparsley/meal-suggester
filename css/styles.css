@@ -1,9 +1,120 @@
+.jumbotron {
+text-align: center;
+background-image: url(../img/veggies.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+border-style: outset;
+border-width: thick;
+border-color: #E15E32;
+border-radius: 20px;
+}
+
+.container-fluid  {
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+
+}
+
+.radio {
+  padding-left: 20px;
+}
+
+body {
+  background-image: url(../img/cutting-board.jpg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+h3 {
+  text-align: center;
+}
+
+#welcome {
+  background: rgba(92,50,62,0.5);
+  border-style: outset;
+  border-width: thick;
+  border-color: #E5F04C;
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#row1 {
+  text-align: center;
+}
+
 #row2 {
   display: none;
+
 }
 #row3 {
   display: none;
+
 }
 #row4 {
   display: none;
+
+}
+
+#firstButton {
+  font-size: 24px;
+  border-radius: 50%;
+  padding: 32px 32px;
+  background-color: #E15E32;
+  border-style: outset;
+  border-color: #E5F04C;
+  border-width: thick;
+}
+
+#baseStyles {
+  background: rgba(92,50,62,0.5);
+  border-style: outset;
+  border-width: thick;
+  border-color: #E5F04C;
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 30px;
+}
+
+#proteinStyles {
+  background: rgba(92,50,62,0.5);
+  border-style: outset;
+  border-width: thick;
+  border-color: #E5F04C;
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#sauceStyles {
+  background: rgba(92,50,62,0.5);
+  border-style: outset;
+  border-width: thick;
+  border-color: #E5F04C;
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#veggieStyles {
+  background: rgba(92,50,62,0.5);
+  border-style: outset;
+  border-width: thick;
+  border-color: #E5F04C;
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#outputStyles {
+  background: rgba(92,50,62,0.5);
+  border-style: outset;
+  border-width: thick;
+  border-color: #E5F04C;
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
