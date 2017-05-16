@@ -3,7 +3,7 @@ $(document).ready(function(){
 
   $("form#baseOptions").submit(function(event){
     event.preventDefault();
-
+    clearfield();
     userInput.Base = $("input:radio[name=base]:checked").val();
     userInput.Protein = $("input:radio[name=protein]:checked").val();
     console.log(userInput);
@@ -28,7 +28,11 @@ function recipe(base, protein, veggie, sauce){
   this.Sauce = sauce;
 }
 var userInput = new recipe();
-
+//clear output field before appending new stuff
+function clearfield(){
+  $("#baseOutput").text("");
+  $("#proteinOutput").text("");
+}
 //intruction on how to cook the bases
 recipe.prototype.rice = function(){
   $("#baseOutput").append("How to cook rice:<br>For every cup of rice you would like to cook, bring two cups of water to a boil ( if you wanted to cook two cups of rice you would bring four cups of water to a boil!).<br> Once the water is boiling, add the rice, stir, cover, and turn to low for 45 minutes. <br> After 45 minutes, stir your rice and you're ready to go!");
@@ -74,7 +78,7 @@ recipe.prototype.cookBase = function(base){
     return userInput.rice();
   }else if(base === "beans"){
     return userInput.beans();
-  }else if(base === "potatos"){
+  }else if(base === "potatoes"){
     return userInput.potatos();
   }else if(base === "chickpeas"){
     return userInput.chickpeas();
