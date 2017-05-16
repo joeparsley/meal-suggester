@@ -53,63 +53,63 @@ function clearfield(){
 }
 //intruction on how to cook the bases
 recipe.prototype.rice = function(){
-  $("#baseOutput").append("How to cook rice:<br>For every cup of rice you would like to cook, bring two cups of water to a boil ( if you wanted to cook two cups of rice you would bring four cups of water to a boil!).<br> Once the water is boiling, add the rice, stir, cover, and turn to low for 45 minutes. <br> After 45 minutes, stir your rice and you're ready to go!");
+  $("#baseOutput").append("<h4>How to cook your rice:</h4>-The ratio for cooking rice is generally 2 to 1. I.E. for every cup rice you'll need two cups of water!<br>-Bring desired amount of water to a boil<br>-Once the water is boiling, add the rice, stir, cover, and turn to low for 45 minutes.<br>-Optional: you can also season your rice by adding a little slice of butter, or whatever spices you have on hand<br>-After 45 minutes, stir your rice to ensure all of the loose luqid has cooked out");
 }
 recipe.prototype.beans = function(){
-  $("#baseOutput").append("How to cook beans: <br> If you're not using a can of pre-cooked beans, this is how to cook them!<br> Put the beans in a pot on the stove, cover with water by two inches, add salt if you like, and bring to a boil. <br> Turn off the heat and let them soak for an hour.<br> Drain, rinse and proceed with your recipe.");
+  $("#baseOutput").append("<h4>How to cook your beans:</h4>-If you're not using a can of pre-cooked beans, this is how to cook them!<br>-Put the beans in a pot on the stove, cover with water by two inches, add salt if you like, and bring to a boil.<br>-Turn off the heat and let them soak for an hour.<br>-Drain, rinse and your beans are now cooked enough to be added to your recpie!<br>-Hint: If you cook your beans this way its usually a good idea to cook them with everything else if your recipe permits it!");
 }
 recipe.prototype.potatos = function(){
-  $("#baseOutput").append("How to cook Potatoes:<br>Dice potatoes in 1/4 inch cut. Put them on a plate and cover them with a wet paper towel<br>Microwave them for 4-5 minutes on High<br> Pan fry the potatoes on High with a little bit of olive oil, and season to taste<br>fry until they are golden brown and crispy!");
+  $("#baseOutput").append("<h4>How to cook your Potatoes:</h4>-Dice potatoes in 1/4 inch cut. Place them on a plate and cover them with a wet paper towel.<br>-Microwave them for 4-5 minutes on High<br>-Pan fry the potatoes on high heat with a little bit of olive oil, and season to taste<br>-Fry until they are golden brown and crispy!");
 }
 recipe.prototype.chickpeas = function(){
-  $("#baseOutput").append("How to cook chickpeas:<br>If you're not using a can of pre-cooked beans, this is how to cook them! <br> Put the beans in a pot on the stove, cover with water by two inches, add salt if you like, and bring to a boil.<br>Turn off the heat and let them soak for an hour. <br> Drain, rinse and proceed with your recipe.");
+  $("#baseOutput").append("<h4>How to cook your chickpeas:</h4>-If you're not using a can of pre-cooked beans, this is how to cook them!<br>-Put the beans in a pot on the stove, cover with water by two inches, add salt if you like, and bring to a boil.<br>-Turn off the heat and let them soak for an hour.<br>-Drain, rinse and proceed with your recipe.");
 }
 recipe.prototype.pasta = function(){
-  $("#baseOutput").append("How to cook Pasta:<br>Bring a pot of water with a dash of salt to a boil<br>Toss uncooked pasta in to pot, and let boil for 5-20 minutesConstantly check the tenderness of your pasta until it is ready to eat<br>Strain Pasta into colander (run cold water over the pasta if you think it might be over cooked)Set aside, you're pasta is now cooked!");
+  $("#baseOutput").append("<h4>How to cook your Pasta:</h4>-Bring a pot of water with a dash of salt to a boil<br>-Toss uncooked pasta in to your pot, and let boil for 5-20 minutes, constantly check the tenderness of your pasta until it is ready to eat.<br>-Strain Pasta into colander, set aside and you're pasta is now cooked!<br>-Pro Tip: Run cold water over the pasta while it's in the colander if you think it might be over cooked");
 
 }
 recipe.prototype.quinoa = function(){
-  $("#baseOutput").append("How to cook Quinoa:<br>For every cup of quinoa you would like to cook, bring two cups of water to a boil(if you wanted to<br>cook two cups of quinoa you would bring four cups of water to a boil!).<br>Once the water is<br>boiling, add the quinoa, stir, cover, and turn to low for 15-20 minutes until all of the liquid is gone.<br>After 15-20 minutes, stir your quinoa and you're ready to go!");
+  $("#baseOutput").append("<h4>How to cook Quinoa:</h4>-The ratio for cooking quinoa is alot like cooking rice, it's generally 2 to 1. I.E. for every cup quinoa you'll need two cups of water!<br>-Once the desired amount of water is boiling, add the quinoa, stir, cover, and turn to low for 15-20 minutes until all of the liquid is gone.<br>-Optional: you can also season your rice by adding a little slice of butter, or whatever spices you have on hand-After 15-20 minutes, stir your quinoa and you're ready to go!");
 }
 //instruction on how to cook the proteins
 recipe.prototype.beef = function(){
-  $("#proteinOutput").append("How to cook Beef:<br>Dice your beef into 1/4 inch cubes<br>Optional: marinade your beef in half  and half oil.<br>Seer on a hot pan with a little bit of oil and season to taste<br>Make sure meat is cooked to desired doneness<br>Your beef is ready for your dish!");
+  $("#proteinOutput").append("<h4>How to cook Beef:</h4>-Dice your beef into 1/4 inch cubes<br>-Optional: Marinade your beef in 3 parts sauce, 1 part oil.<br>-Seer on a hot pan with a little bit of oil and season to taste<br>-Make sure meat is cooked to desired doneness<br>-Your beef is ready for your dish!");
 }
 recipe.prototype.pork = function(){
-  $("#proteinOutput").append("How to cook Pork:<br>Dice your pork into 1/4 inch cubes or thin strips<br>Optional: marinade your pork in half  and half oil.<br>Cook in a hot pan with a little bit of oil and season to taste<br>Make sure your pork is cooked thoroughly all the way thoroughly<br>Your pork is ready for your dish!");
+  $("#proteinOutput").append("<h4>How to cook Pork:</h4>-Dice your pork into 1/4 inch cubes or thin strips<br>-Optional: Marinade your pork in 3 parts sauce, 1 part oil.<br>-Cook in a hot pan with a little bit of oil and season to taste<br>-Make sure your pork is cooked all the way through.<br>-Your pork is ready for your dish!");
 }
 recipe.prototype.chicken = function(){
-  $("#proteinOutput").append("How to cook Chicken:<br> Dice your chicken into 1/4 inch cubes or thin strips<br>Optional: marinade your chicken in half  and half oil.<br> Cook in a hot pan with a little bit of oil and season to taste<br> Make sure your chicken is cooked thoroughly all the way thoroughly<br>Your chicken is ready for your dish!");
+  $("#proteinOutput").append("<h4>How to cook Chicken:</h4>-Dice your chicken into 1/4 inch cubes or thin strips<br>-Optional: Marinade your chicken in 3 parts sauce, 1 part oil.<br>-Cook in a hot pan with a little bit of oil and season to taste<br>-Make sure your chicken is cooked thoroughly all the way thoroughly<br>-Your chicken is ready for your dish!");
 }
 recipe.prototype.tofu = function(){
-  $("#proteinOutput").append("How to cook Tofu:<br>Dice your tofu into 1/4 inch cubes<br> Optional: marinade your tofu in half and half oil.<br>cook in a hot pan a little bit of oil and season to taste<br>Once the Tofu has color and is as crispy as you would like it, you're good to go!")
+  $("#proteinOutput").append("<h4>How to cook Tofu:</h4>-Dice your tofu into 1/4 inch cubes<br>-Optional: Marinade your tofu in 3 parts sauce, 1 part oil.<br>-Cook in a hot pan a little bit of oil and season to taste<br>-Once the Tofu has color and is as crispy as you would like it, you're good to go!")
 }
 recipe.prototype.tempeh = function(){
-  $("#proteinOutput").append(" How to cook Tempeh:<br>Dice your Tempeh into 1/4 inch cubes or strips<br> Optional: marinade your tempeh in equal parts half orange juice half soy sauce<br>Cook in a hot pan with a little bit of oil and season to taste<br> once the Tempeh has color and is as crispy as you would like it, you're good to go!");
+  $("#proteinOutput").append("<h4>How to cook Tempeh:</h4>-Dice your Tempeh into 1/4 inch cubes or strips<br>-Optional: marinade your tempeh in equal parts half orange juice, half soy sauce<br>-Cook in a hot pan with a little bit of oil and season to taste<br>-Once the Tempeh has color and is as crispy as you would like it, you're good to go!");
 }
 recipe.prototype.soyCurl = function(){
-  $("#proteinOutput").append(" How to cook Soy Curls:<br>Empty Soy curls into a bowl of warm water and let soak for 8-10 minutes<br>Drain excess water from bowl<br>Add you favorite seasonings<br>Lightly sautee to desired tenderness/crispness<br>You're Soy Curls are ready to go!");
+  $("#proteinOutput").append("<h4>How to cook Soy Curls:</h4>-Empty Soy curls into a bowl of warm water and let soak for 8-10 minutes<br>-Drain excess water from bowl<br>-Add you favorite seasonings<br>-Lightly sautee to desired tenderness/crispness<br>-You're Soy Curls are ready to go!");
 }
 
 // instructions on how to cook veggies:
 recipe.prototype.veggies = function(veggie){
-  $("#veggieOutput").append("How to cook your Veggies!<br> Get a pan hot with a little bit of oil.<br> Toss in " + " " + veggie + "<br> Then, once the veggies you first tossed in are starting to go translucent, toss in the rest of your veggies and season to taste. <br> Once the rest of the veggies are cooked to your liking, turn the heat off and your veggies are ready to go!");
+  $("#veggieOutput").append("<h4>How to cook your Veggies!</h4>-Get a pan hot with a little bit of oil.<br>-The veggies you have are: " + " " + veggie + " toss in the veggies that take longest to cook FIRST.<br>-Then, once the veggies you first tossed in are starting to go translucent, toss in the rest of your veggies and season to taste.<br>-Once the rest of the veggies are cooked to your liking, turn the heat off and your veggies are ready to go!");
 }
 // instructions on how to prepare your sauces!
 recipe.prototype.bbq = function(){
-  $("#sauceOutput").append("How to prepare your BBQ sauce!<br> If you're using Sweet Baby Ray's BBQ sauce, don't worry about a single thing. This fine sauce will do all of the work for you.<br> If you're not using Sweet Baby Ray's, then here is a few different ways to spice up your SAUCE.<br> Take some chili flake or one of your favorite hot sauces and add it to your BBQ. <br> Take some Garlic or ginger and mix it into your sauce <br> If you're feeling really crazy add some lime juice and a little pinch of honey(or brownsugar)");
+  $("#sauceOutput").append("<h4>How to prepare your BBQ sauce!</h4>-If you're using Sweet Baby Ray's BBQ sauce, don't worry about a single thing. This fine sauce will do all of the work for you.<br>-If you're not using Sweet Baby Ray's, then here is a few different ways to spice up your SAUCE.<br>-Take some chili flake or one of your favorite hot sauces and add it to your BBQ.<br>-Take some Garlic or ginger and mix it into your sauce<br>-If you're feeling really crazy add some lime juice and a little pinch of honey(or brownsugar)");
 }
 recipe.prototype.curry = function() {
-  $("#sauceOutput").append("How to prepare your curry: <br> if you have store bought, premade curry, that will be totaly fine for your meal! If you don't have curry on hand, here's a quick way to make it! <br> Take some Onion and Garlic and brown them in a pot(you can also throw ANY veggies that you want in your curry). <br> Once they are browned, add coconut milk or cream of coconut to your pot. <br> Add a curry until desired taste. <br> let simmer for 10-20 minutes until it thickens up and you're ready to go!");
+  $("#sauceOutput").append("<h4>How to prepare your curry:</h4>-If you have store bought, premade curry, that will be totaly fine for your meal! If you don't have curry on hand, here's a quick way to make it!<br>-Take some Onion and Garlic and brown them in a pot(you can also throw ANY veggies that you want in your curry).<br>-Once they are browned, add coconut milk or cream of coconut to your pot.<br>-Add a curry powder until desired taste.<br>-Let simmer for 10-20 minutes until it thickens up and you're ready to go!");
 }
 recipe.prototype.teryaki = function(){
-  $("#sauceOutput").append("How to prepare your Teryaki: <br> In most cases it's just best to use store bought Teryaki!");
+  $("#sauceOutput").append("<h4>How to prepare your Teryaki:</h4><br>-In most cases it's just best to use store bought Teryaki!");
 }
 recipe.prototype.tahini = function(){
   $("#sauceOutput").append("How to prepare your Tahini: <br> In most cases, store bought Tahini is rad and super tastey, and way easier to use right out the get-go! However, if you have a food processor and seasame seeds, it's incredibly easy to make your own! <br> First, lightly roast your seasame seeds in a dry pan. <br> Throw the seasame seeds in your food processor with some garlic, lemon juice, olive oil, salt and pepper, blend, and BOOM. You now have some kick-ass Homemade Tahini sauce!")
 }
 recipe.prototype.marinara = function(){
-  $("#sauceOutput").append("How to prepare your marinara: In most cases it's just best to use store bought marinara!");
+  $("#sauceOutput").append("<h4>How to prepare your marinara:</h4>-In most cases it's just best to use store bought marinara!");
 }
 //the name of a recipe is the type of protein + nickname for the sauce
 recipe.prototype.recipeName = function(protein, sauce){
@@ -124,7 +124,7 @@ recipe.prototype.recipeName = function(protein, sauce){
   }else if(sauce === "marinara"){
     var sauceNickname = "Killer Tomato"
   }
-  $("#recipe_name").append(protein.toUpperCase() + " " + sauceNickname.toUpperCase());
+  $("#recipe_name").append("THE" + " " + protein.toUpperCase() + " " + sauceNickname.toUpperCase());
 }
 
 
