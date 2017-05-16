@@ -43,7 +43,7 @@ recipe.prototype.beans = function(){
   $("#baseOutput").append("How to cook beans: <br> If you're not using a can of pre-cooked beans, this is how to cook them!<br> Put the beans in a pot on the stove, cover with water by two inches, add salt if you like, and bring to a boil. <br> Turn off the heat and let them soak for an hour.<br> Drain, rinse and proceed with your recipe.");
 }
 recipe.prototype.potatos = function(){
-  $("#baseOutput").append("How to cook Potatoes:<br>Dice potatoes in 1/4 inch cut Put them on a plate and cover them with a wet paper towel<br>Microwave them for 4-5 minutes on High<br> Pan fry the potatoes on High with a little bit of olive oil, and season to taste<br>fry until they are golden brown and crispy!");
+  $("#baseOutput").append("How to cook Potatoes:<br>Dice potatoes in 1/4 inch cut. Put them on a plate and cover them with a wet paper towel<br>Microwave them for 4-5 minutes on High<br> Pan fry the potatoes on High with a little bit of olive oil, and season to taste<br>fry until they are golden brown and crispy!");
 }
 recipe.prototype.chickpeas = function(){
   $("#baseOutput").append("How to cook chickpeas:<br>If you're not using a can of pre-cooked beans, this is how to cook them! <br> Put the beans in a pot on the stove, cover with water by two inches, add salt if you like, and bring to a boil.<br>Turn off the heat and let them soak for an hour. <br> Drain, rinse and proceed with your recipe.");
@@ -63,10 +63,10 @@ recipe.prototype.pork = function(){
   $("#proteinOutput").append("How to cook Pork:<br>Dice your pork into 1/4 inch cubes or thin strips<br>Optional: marinade your pork in half  and half oil.<br>Cook in a hot pan with a little bit of oil and season to taste<br>Make sure your pork is cooked thoroughly all the way thoroughly<br>Your pork is ready for your dish!");
 }
 recipe.prototype.chicken = function(){
-  $("#proteinOutput").append("How to cook Chicken:<br> Dice your pork into 1/4 inch cubes or thin strips<br>Optional: marinade your chicken in half  and half oil.<br> Cook in a hot pan with a little bit of oil and season to taste<br> Make sure your chicken is cooked thoroughly all the way thoroughly<br>Your chicken is ready for your dish!");
+  $("#proteinOutput").append("How to cook Chicken:<br> Dice your chicken into 1/4 inch cubes or thin strips<br>Optional: marinade your chicken in half  and half oil.<br> Cook in a hot pan with a little bit of oil and season to taste<br> Make sure your chicken is cooked thoroughly all the way thoroughly<br>Your chicken is ready for your dish!");
 }
 recipe.prototype.tofu = function(){
-  $("#proteinOutput").append("How to cook Tofu:<br>Dice your tofu into 1/4 inch cubes<br> Optional: marinade your chicken in half and half oil.<br>cook in a hot pan a little bit of oil and season to taste<br>Once the Tofu has color and is as crispy as you would like it, you're good to go!")
+  $("#proteinOutput").append("How to cook Tofu:<br>Dice your tofu into 1/4 inch cubes<br> Optional: marinade your tofu in half and half oil.<br>cook in a hot pan a little bit of oil and season to taste<br>Once the Tofu has color and is as crispy as you would like it, you're good to go!")
 }
 recipe.prototype.tempeh = function(){
   $("#proteinOutput").append(" How to cook Tempeh:<br>Dice your Tempeh into 1/4 inch cubes or strips<br> Optional: marinade your tempeh in equal parts half orange juice half soy sauce<br>Cook in a hot pan with a little bit of oil and season to taste<br> once the Tempeh has color and is as crispy as you would like it, you're good to go!");
