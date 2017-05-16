@@ -4,8 +4,14 @@ $(document).ready(function(){
   $("form#baseOptions").submit(function(event){
     event.preventDefault();
     clearfield();
+    userInput.Veggie = [];
     userInput.Base = $("input:radio[name=base]:checked").val();
     userInput.Protein = $("input:radio[name=protein]:checked").val();
+    userInput.Sauce = $("input:radio[name=sauce]:checked").val();
+    $(":checkbox:checked").each(function(i){
+      userInput.Veggie[i]=$(this).val();
+    })
+    console.log(userInput.Veggie);
     console.log(userInput);
     console.log(userInput.Base);
     console.log(userInput.Protein);
@@ -21,10 +27,10 @@ $(document).ready(function(){
 
 
 //Backend
-function recipe(base, protein, veggie, sauce){
+function recipe(base, protein, sauce){
   this.Base = base;
   this.Protein = protein;
-  this.Veggie = veggie;
+  this.Veggie = [];
   this.Sauce = sauce;
 }
 var userInput = new recipe();
@@ -87,8 +93,7 @@ recipe.prototype.cookBase = function(base){
   }else if(base === "quinoa"){
     return userInput.quinoa();
   }
-  // console.log(baseInstruction);
-  // return baseInstruction;
+
 }
 recipe.prototype.cookProtein = function(protein){
   if(protein === "beef"){
@@ -104,4 +109,8 @@ recipe.prototype.cookProtein = function(protein){
   }else if(protein ==="soyCurls"){
     userInput.soyCurl();
   }
+}
+//append sauce on html
+recipe.prototype.cookVeggie = function(veggie){
+  
 }
