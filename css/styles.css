@@ -8,6 +8,7 @@ border-style: outset;
 border-width: thick;
 border-color: #E15E32;
 border-radius: 20px;
+font-family: 'Amatica SC', cursive;
 }
 
 .container-fluid {
@@ -37,6 +38,8 @@ h3 {
   border-radius: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
+  font-family: 'Amatica SC', cursive;
+  font-size: 40px;
 }
 #instruction{
   background: rgba(92,50,62,0.5);
@@ -47,14 +50,21 @@ h3 {
   padding-top: 10px;
   padding-bottom: 20px;
   max-width: 750px;
+  font-family: 'Pompiere', cursive;
+  font-size: 30px;
+  font-weight: lighter;
 }
 #infoRow {
   display: none;
+  font-family: 'Pompiere', cursive;
+  font-size: 30px;
+  font-weight: lighter;
 }
 
 
 #row1 {
   text-align: center;
+
 }
 
 #row2 {
@@ -81,15 +91,18 @@ h3 {
 }
 
 #baseStyles, #proteinStyles, #sauceStyles {
+  margin: 0 auto;
   background: rgba(92,50,62,0.5);
   border-style: outset;
   border-width: thick;
   border-color: #E5F04C;
   border-radius: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  max-width: 450px;
-  height: 261px;
+  padding-top: 1px;
+  padding-bottom: 50px;
+  height: 320px;
+  font-family: 'Pompiere', cursive;
+  font-size: 25px;
+  font-weight: lighter;
 }
 
 #veggieStyles {
@@ -101,6 +114,10 @@ h3 {
   padding-top: 20px;
   padding-bottom: 20px;
   max-width: 750px;
+  height: 500px;
+  font-family: 'Pompiere', cursive;
+  font-size: 25px;
+  font-weight: lighter;
 }
 
 #outputStyles {
@@ -109,8 +126,12 @@ h3 {
   border-width: thick;
   border-color: #E5F04C;
   border-radius: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  font-family: 'Pompiere', cursive;
+  font-size: 30px;
+  font-weight: lighter;
 }
 
 .columns{
