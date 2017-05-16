@@ -21,7 +21,7 @@
         </div>
       </div>
       <div class="row" id="infoRow">
-        <div class="col-md-6 col-sm-6 col-md-offset-3 col-sm-offset-3">
+        <div class="col-md-6 col-sm-6 col-md-offset-3 col-sm-offset-3" id="instruction">
           <h2>Instructions on how to use this site:</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
@@ -29,50 +29,51 @@
       <div class="row" id="row2">
         <!-- USER INPUT FOR BASE OPTION -->
         <form id="baseOptions">
-          <div class="form-group">
-            <div class="col-sm-4 col-md-4" id="baseStyles">
-              <h3>What base do you have?</h3>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="base" value="rice" checked>
-                  Rice
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="base" value="beans">
-                  Beans
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="base" value="chickpeas">
-                  Chickpeas
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="base" value="potatoes">
-                  Potatoes
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="base" value="pasta">
-                  Pasta
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="base" value="quinoa">
-                  Quinoa
-                </label>
-              </div>
+          <div class="col-sm-4 col-md-4" id="baseStyles">
+            <div class="form-group">
+            <h3>What base do you have?</h3>
+            <div class="radio">
+              <label>
+                <input type="radio" name="base" value="rice" checked>
+                Rice
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="base" value="beans">
+                Beans
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="base" value="chickpeas">
+                Chickpeas
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="base" value="potatoes">
+                Potatoes
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="base" value="pasta">
+                Pasta
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="base" value="quinoa">
+                Quinoa
+              </label>
+            </div>
             </div>
           </div>
-          <div class="col-sm-4 col-md-4">
+
+          <div class="col-sm-4 col-md-4" id="proteinStyles">
             <!-- USER INPUT FOR PROTEIN OPTIONS -->
-            <div class="form-group" id="proteinStyles">
+            <div class="form-group" >
               <h3>What protein do you have?</h3>
               <div class="radio">
               <label>
@@ -112,9 +113,9 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-4 col-md-4">
+          <div class="col-sm-4 col-md-4" id="sauceStyles">
             <!-- USER INPUT FOR SAUCE OPTIONS -->
-            <div class="form-group" id="sauceStyles" >
+            <div class="form-group"  >
               <h3>What sauce do you have?</h3>
               <div class="radio">
                 <label>
@@ -148,35 +149,40 @@
               </div>
             </div>
           </div>
-          <button type="submit" class="btn btn-info">submit</button>
+
         </form>
       </div>
       <div class="row" id="row3">
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-md-offset-3 col-sm-offset-3" id="veggieStyles">
           <!-- USER INPUT FOR VEGGIE OPTIONS -->
+          <h3>What vegetables do you have?</h3>
           <form id="vegOptions">
-          <div class="form-group" id="veggieStyles">
-            <h3>What vegetables do you have?</h3>
-            <input type="checkbox" name="veg" value="tomatoes">Tomatoes<br>
-            <input type="checkbox" name="veg" value="broccoli">Broccoli<br>
-            <input type="checkbox" name="veg" value="avacado">Avacado<br>
-            <input type="checkbox" name="veg" value="mushrooms">Mushrooms<br>
-            <input type="checkbox" name="veg" value="spinach">Spinach<br>
-            <input type="checkbox" name="veg" value="carrots">Carrots<br>
-            <input type="checkbox" name="veg" value="redOnion">Red Onion<br>
-            <input type="checkbox" name="veg" value="whiteOnion">White Onion<br>
-            <input type="checkbox" name="veg" value="cauliflower">Cauliflower<br>
-            <input type="checkbox" name="veg" value="greenPepper">Green Pepper<br>
-            <input type="checkbox" name="veg" value="bellPepper">Bell Pepper<br>
-            <input type="checkbox" name="veg" value="celery">Celery<br>
-            <input type="checkbox" name="veg" value="garlic">Garlic<br>
-            <input type="checkbox" name="veg" value="zuccini">Zuccini<br>
-            <input type="checkbox" name="veg" value="brusselsSprouts">Brussels Sprouts<br>
-            <input type="checkbox" name="veg" value="kale">Kale<br>
-            <input type="checkbox" name="veg" value="corn">Corn<br>
-            <input type="checkbox" name="veg" value="cucumber">Cucumber<br>
-          </div>
+            <div class="form-group">
+              <ul class="columns">
+                <li><label><input type="checkbox" name="veg" value="tomatoes">Tomatoes</label></li>
+                <li><label><input type="checkbox" name="veg" value="broccoli">Broccoli</label></li>
+                <li><label><input type="checkbox" name="veg" value="avacado">Avacado</label></li>
+                <li><label><input type="checkbox" name="veg" value="mushrooms">Mushrooms</label></li>
+                <li><label><input type="checkbox" name="veg" value="spinach">Spinach</label></li>
+                <li><label><input type="checkbox" name="veg" value="carrots">Carrots</label></li>
+                <li><label><input type="checkbox" name="veg" value="redOnion">Red Onion</label></li>
+                <li><label><input type="checkbox" name="veg" value="whiteOnion">White Onion</label></li>
+                <li><label><input type="checkbox" name="veg" value="cauliflower">Cauliflower</label></li>
+                <li><label><input type="checkbox" name="veg" value="greenPepper">Green Pepper</label></li>
+                <li><label><input type="checkbox" name="veg" value="bellPepper">Bell Pepper</label></li>
+                <li><label><input type="checkbox" name="veg" value="celery">Celery</label></li>
+                <li><label><input type="checkbox" name="veg" value="garlic">Garlic</label></li>
+                <li><label><input type="checkbox" name="veg" value="zuccini">Zuccini</label></li>
+                <li><label><input type="checkbox" name="veg" value="brusselsSprouts">Brussels Sprouts</label></li>
+                <li><label><input type="checkbox" name="veg" value="kale">Kale</label></li>
+                <li><label><input type="checkbox" name="veg" value="corn">Corn</label></li>
+                <li><label><input type="checkbox" name="veg" value="cucumber">Cucumber</label></li>
+              </ul>
+            </div>
+            <center><button type="submit" class="btn btn-info btn-lg">submit</button></center>
+          </form>
         </div>
+
       </div>
       <!-- USER OUTPUT FIELD -->
       <div class="row" id="row4">
