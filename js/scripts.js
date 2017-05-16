@@ -7,7 +7,7 @@ $(document).ready(function(){
   $("#row1").hide();
   $("#row2").show();
   $("#row3").show();
-
+  $("#infoRow").show();
   })
 
 
