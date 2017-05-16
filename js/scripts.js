@@ -159,8 +159,6 @@ recipe.prototype.cookProtein = function(protein){
     userInput.soyCurl();
   }
 }
-<<<<<<< HEAD
-=======
 //append sauce on html
 recipe.prototype.prepareSauce = function(sauce){
   if(sauce === "bbq"){
@@ -175,4 +173,3 @@ recipe.prototype.prepareSauce = function(sauce){
     return userInput.marinara();
   }
 }
->>>>>>> 584ca265dc920de425a7edad7f85456f9aa96b78
