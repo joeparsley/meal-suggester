@@ -9,15 +9,17 @@ $(document).ready(function(){
     userInput.Sauce = $("input:radio[name=sauce]:checked").val();
     $(":checkbox:checked").each(function(i){
       userInput.Veggie[i]=$(this).val();
-    })
-    console.log(userInput.Veggie);
+    });
     console.log(userInput);
+    console.log(userInput.Veggie);
+    console.log(userInput.Sauce);
     console.log(userInput.Base);
     console.log(userInput.Protein);
+    userInput.recipeName(userInput.Protein, userInput.Sauce);
     userInput.cookBase(userInput.Base);
     userInput.cookProtein(userInput.Protein);
     userInput.veggies(userInput.Veggie);
-
+    userInput.prepareSauce(userInput.Sauce);
   });
 });
 
@@ -34,6 +36,8 @@ function clearfield(){
   $("#baseOutput").text("");
   $("#proteinOutput").text("");
   $("#veggieOutput").text("");
+  $("#sauceOutput").text("");
+  $("#recipe_name").text("");
 }
 //intruction on how to cook the bases
 recipe.prototype.rice = function(){
@@ -75,14 +79,9 @@ recipe.prototype.soyCurl = function(){
   $("#proteinOutput").append(" How to cook Soy Curls:<br>Empty Soy curls into a bowl of warm water and let soak for 8-10 minutes<br>Drain excess water from bowl<br>Add you favorite seasonings<br>Lightly sautee to desired tenderness/crispness<br>You're Soy Curls are ready to go!");
 }
 
-recipe.prototype.veggies = function(veggie){
-  $("#veggieOutput").append("How to cook your Veggies!<br> Get a pan hot with a little bit of oil.<br> Toss in" + " " + veggie + "<br> Then, once the veggies you first tossed in are starting to go translucent, toss in the rest of your veggies and season to taste. <br> Once the rest of the veggies are cooked to your liking, turn the heat off and your veggies are ready to go!")
-}
-
-
 // instructions on how to cook veggies:
-recipe.prototype.veggies = function(){
-  $("#veggieOutput").append("How to cook your Veggies!<br> Get a pan hot with a little bit of oil.<br> Toss in what ever veggies take the longest too cook first.<br> Then, once the veggies you first tossed in are starting to go translucent, toss in the rest of your veggies and season to taste. <br> Once the rest of the veggies are cooked to your likeing, turn the heat off and your veggies are ready to go!");
+recipe.prototype.veggies = function(veggie){
+  $("#veggieOutput").append("How to cook your Veggies!<br> Get a pan hot with a little bit of oil.<br> Toss in " + " " + veggie + "<br> Then, once the veggies you first tossed in are starting to go translucent, toss in the rest of your veggies and season to taste. <br> Once the rest of the veggies are cooked to your liking, turn the heat off and your veggies are ready to go!");
 }
 // instructions on how to prepare your sauces!
 recipe.prototype.bbq = function(){
@@ -95,12 +94,26 @@ recipe.prototype.teryaki = function(){
   $("#sauceOutput").append("How to prepare your Teryaki: <br> In most cases it's just best to use store bought Teryaki!");
 }
 recipe.prototype.tahini = function(){
-  $("#sauceOutput").append("How to prepare your Tahini: <br> In most cases store bought Tahini is rad and super tastey, and way easier to use right out the get-go! However, if you have a food processor and seasame seeds, it's incredibly easy to make your own! <br> First, lightly roast your seasame seeds in a dry pan. <br> Throw the seasame seeds in your food processor with some garlic, lemon juice, olive oil, salt and pepper, blend, and BOOM. You now have some kick-ass Homemade Tahini sauce!")
+  $("#sauceOutput").append("How to prepare your Tahini: <br> In most cases, store bought Tahini is rad and super tastey, and way easier to use right out the get-go! However, if you have a food processor and seasame seeds, it's incredibly easy to make your own! <br> First, lightly roast your seasame seeds in a dry pan. <br> Throw the seasame seeds in your food processor with some garlic, lemon juice, olive oil, salt and pepper, blend, and BOOM. You now have some kick-ass Homemade Tahini sauce!")
 }
 recipe.prototype.marinara = function(){
   $("#sauceOutput").append("How to prepare your marinara: In most cases it's just best to use store bought marinara!");
 }
-
+//the name of a recipe is the type of protein + nickname for the sauce
+recipe.prototype.recipeName = function(protein, sauce){
+  if(sauce === "bbq"){
+    var sauceNickname = "Cowboy";
+  }else if(sauce === "curry"){
+    var sauceNickname = "Spicyboy";
+  }else if(sauce === "teryaki"){
+    var sauceNickname = "Fusion";
+  }else if(sauce === "tahini"){
+    var sauceNickname = "Meanseed";
+  }else if(sauce === "marinara"){
+    var sauceNickname = "Killer Tomato"
+  }
+  $("#recipe_name").append(protein.toUpperCase() + " " + sauceNickname.toUpperCase());
+}
 
 
 
@@ -135,10 +148,17 @@ recipe.prototype.cookProtein = function(protein){
     userInput.soyCurl();
   }
 }
-<<<<<<< HEAD
-=======
 //append sauce on html
-recipe.prototype.cookVeggie = function(veggie){
-
+recipe.prototype.prepareSauce = function(sauce){
+  if(sauce === "bbq"){
+    return userInput.bbq();
+  }else if(sauce === "curry"){
+    return userInput.curry();
+  }else if(sauce === "teryaki"){
+    return userInput.teryaki();
+  }else if(sauce === "tahini"){
+    return userInput.tahini();
+  }else if(sauce === "marinara"){
+    return userInput.marinara();
+  }
 }
->>>>>>> 5ed4cf6606bdfa1356ffc1957d7caa235d3e37c5
