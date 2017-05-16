@@ -8,24 +8,29 @@
     <title>Meal Suggester</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
       <!--HEADER-->
       <div class="jumbotron">
-      <h1>Meal Suggester</h1>
+        <h1>Meal Suggester</h1>
       </div>
       <div class="row" id="row1">
-        <div class="col-md-6 col-sm-6 col-md-offset-3 col-sm-offset-3">
+        <div class="col-md-6 col-sm-6 col-md-offset-3 col-sm-offset-3" id="welcome">
           <h3>Well hey there!</h3>
-          <p>you're probably hungry and don't know what to make huh? Well you're in luck! Click on the button bellow to start entering the ingredients you have on hand, and this app will suggest something tasty for you to eat!
-          </p>
+          <p>you're probably hungry and don't know what to make huh? Well you're in luck! Click on the button bellow to start entering the ingredients you have on hand, and this app will suggest something tasty for you to eat!</p>
           <button type="button" name="firstButton" class="btn btn-success" id="firstButton">Let's get Started!</button>
+        </div>
+      </div>
+      <div class="row" id="infoRow">
+        <div class="col-md-6 col-sm-6 col-md-offset-3 col-sm-offset-3">
+          <h2>Instructions on how to use this site:</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
       </div>
       <div class="row" id="row2">
         <!-- USER INPUT FOR BASE OPTION -->
         <form id="baseOptions">
           <div class="form-group">
-            <div class="col-sm-4">
+            <div class="col-sm-4 col-md-4" id="baseStyles">
               <h3>What base do you have?</h3>
               <div class="radio">
                 <label>
@@ -65,98 +70,92 @@
               </div>
             </div>
           </div>
-
-          <div class="col-sm-4">
+          <div class="col-sm-4 col-md-4">
             <!-- USER INPUT FOR PROTEIN OPTIONS -->
-
-              <div class="form-group">
-                <h3>What protein do you have?</h3>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="protein" value="beef" checked>
-                  Beef
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="protein" value="pork">
-                    Pork
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="protein" value="chicken">
-                    Chicken
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="protein" value="tofu">
-                    Tofu
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="protein" value="tempeh">
-                    Tempeh
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="protein" value="soyCurls">
-                    Soy Curls
-                  </label>
-                </div>
+            <div class="form-group" id="proteinStyles">
+              <h3>What protein do you have?</h3>
+              <div class="radio">
+              <label>
+                  <input type="radio" name="protein" value="beef" checked>
+                Beef
+                </label>
               </div>
-
+              <div class="radio">
+                <label>
+                  <input type="radio" name="protein" value="pork">
+                  Pork
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="protein" value="chicken">
+                  Chicken
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="protein" value="tofu">
+                  Tofu
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="protein" value="tempeh">
+                  Tempeh
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="protein" value="soyCurls">
+                  Soy Curls
+                </label>
+              </div>
+            </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-4 col-md-4">
             <!-- USER INPUT FOR SAUCE OPTIONS -->
-
-              <div class="form-group">
-                <h3>What sauce do you have?</h3>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="sauce" value="bbq" checked>
-                  BBQ
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="sauce" value="curry">
-                    Curry
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="sauce" value="teryaki">
-                    Teryaki
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="sauce" value="tahini">
-                    Tahini Sauce
-                  </label>
-                </div>
-                <div class="radio">
-                  <label>
-                    <input type="radio" name="sauce" value="marinara">
-                    Marinara
-                  </label>
-                </div>
+            <div class="form-group" id="sauceStyles" >
+              <h3>What sauce do you have?</h3>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="sauce" value="bbq" checked>
+                BBQ
+                </label>
               </div>
-
+              <div class="radio">
+                <label>
+                  <input type="radio" name="sauce" value="curry">
+                  Curry
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="sauce" value="teryaki">
+                  Teryaki
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="sauce" value="tahini">
+                  Tahini Sauce
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="sauce" value="marinara">
+                  Marinara
+                </label>
+              </div>
+            </div>
           </div>
           <button type="submit" class="btn btn-info">submit</button>
         </form>
       </div>
-
       <div class="row" id="row3">
-        <div class="col-sm-4">
+        <div class="col-sm-6">
           <!-- USER INPUT FOR VEGGIE OPTIONS -->
           <form id="vegOptions">
-          <div class="form-group">
+          <div class="form-group" id="veggieStyles">
             <h3>What vegetables do you have?</h3>
             <input type="checkbox" name="veg" value="tomatoes">Tomatoes<br>
             <input type="checkbox" name="veg" value="broccoli">Broccoli<br>
@@ -181,7 +180,7 @@
       </div>
       <!-- USER OUTPUT FIELD -->
       <div class="row" id="row4">
-        <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="col-md-12 col-sm-12 col-xs-12" id="outputStyles">
           <h1><span id="recipe_name"><span></h1>
           <p><span id="baseOutput"></span></p>
           <p><span id="proteinOutput"></span></p>
