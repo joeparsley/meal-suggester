@@ -74,11 +74,11 @@ recipe.prototype.tempeh = function(){
 recipe.prototype.soyCurl = function(){
   $("#proteinOutput").append(" How to cook Soy Curls:<br>Empty Soy curls into a bowl of warm water and let soak for 8-10 minutes<br>Drain excess water from bowl<br>Add you favorite seasonings<br>Lightly sautee to desired tenderness/crispness<br>You're Soy Curls are ready to go!");
 }
-<<<<<<< HEAD
+
 recipe.prototype.veggies = function(veggie){
   $("#veggieOutput").append("How to cook your Veggies!<br> Get a pan hot with a little bit of oil.<br> Toss in" + " " + veggie + "<br> Then, once the veggies you first tossed in are starting to go translucent, toss in the rest of your veggies and season to taste. <br> Once the rest of the veggies are cooked to your liking, turn the heat off and your veggies are ready to go!")
 }
-=======
+
 
 // instructions on how to cook veggies:
 recipe.prototype.veggies = function(){
@@ -103,7 +103,7 @@ recipe.prototype.marinara = function(){
 
 
 
->>>>>>> 5ed4cf6606bdfa1356ffc1957d7caa235d3e37c5
+
 //append the recipe on html
 recipe.prototype.cookBase = function(base){
   if ( base === "rice" ){
