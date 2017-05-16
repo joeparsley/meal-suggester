@@ -1,6 +1,5 @@
 //frontend
 $(document).ready(function(){
-
   $("form#baseOptions").submit(function(event){
     event.preventDefault();
     clearfield();
@@ -17,14 +16,10 @@ $(document).ready(function(){
     console.log(userInput.Protein);
     userInput.cookBase(userInput.Base);
     userInput.cookProtein(userInput.Protein);
+    userInput.veggies(userInput.Veggie);
 
   });
-
 });
-
-
-
-
 
 //Backend
 function recipe(base, protein, sauce){
@@ -38,6 +33,7 @@ var userInput = new recipe();
 function clearfield(){
   $("#baseOutput").text("");
   $("#proteinOutput").text("");
+  $("#veggieOutput").text("");
 }
 //intruction on how to cook the bases
 recipe.prototype.rice = function(){
@@ -78,6 +74,9 @@ recipe.prototype.tempeh = function(){
 recipe.prototype.soyCurl = function(){
   $("#proteinOutput").append(" How to cook Soy Curls:<br>Empty Soy curls into a bowl of warm water and let soak for 8-10 minutes<br>Drain excess water from bowl<br>Add you favorite seasonings<br>Lightly sautee to desired tenderness/crispness<br>You're Soy Curls are ready to go!");
 }
+recipe.prototype.veggies = function(veggie){
+  $("#veggieOutput").append("How to cook your Veggies!<br> Get a pan hot with a little bit of oil.<br> Toss in" + " " + veggie + "<br> Then, once the veggies you first tossed in are starting to go translucent, toss in the rest of your veggies and season to taste. <br> Once the rest of the veggies are cooked to your liking, turn the heat off and your veggies are ready to go!")
+}
 //append the recipe on html
 recipe.prototype.cookBase = function(base){
   if ( base === "rice" ){
@@ -93,7 +92,6 @@ recipe.prototype.cookBase = function(base){
   }else if(base === "quinoa"){
     return userInput.quinoa();
   }
-
 }
 recipe.prototype.cookProtein = function(protein){
   if(protein === "beef"){
@@ -109,8 +107,4 @@ recipe.prototype.cookProtein = function(protein){
   }else if(protein ==="soyCurls"){
     userInput.soyCurl();
   }
-}
-//append sauce on html
-recipe.prototype.cookVeggie = function(veggie){
-  
 }
