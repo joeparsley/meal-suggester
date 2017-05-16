@@ -74,9 +74,36 @@ recipe.prototype.tempeh = function(){
 recipe.prototype.soyCurl = function(){
   $("#proteinOutput").append(" How to cook Soy Curls:<br>Empty Soy curls into a bowl of warm water and let soak for 8-10 minutes<br>Drain excess water from bowl<br>Add you favorite seasonings<br>Lightly sautee to desired tenderness/crispness<br>You're Soy Curls are ready to go!");
 }
+<<<<<<< HEAD
 recipe.prototype.veggies = function(veggie){
   $("#veggieOutput").append("How to cook your Veggies!<br> Get a pan hot with a little bit of oil.<br> Toss in" + " " + veggie + "<br> Then, once the veggies you first tossed in are starting to go translucent, toss in the rest of your veggies and season to taste. <br> Once the rest of the veggies are cooked to your liking, turn the heat off and your veggies are ready to go!")
 }
+=======
+
+// instructions on how to cook veggies:
+recipe.prototype.veggies = function(){
+  $("#veggieOutput").append("How to cook your Veggies!<br> Get a pan hot with a little bit of oil.<br> Toss in what ever veggies take the longest too cook first.<br> Then, once the veggies you first tossed in are starting to go translucent, toss in the rest of your veggies and season to taste. <br> Once the rest of the veggies are cooked to your likeing, turn the heat off and your veggies are ready to go!");
+}
+// instructions on how to prepare your sauces!
+recipe.prototype.bbq = function(){
+  $("#sauceOutput").append("How to prepare your BBQ sauce!<br> If you're using Sweet Baby Ray's BBQ sauce, don't worry about a single thing. This fine sauce will do all of the work for you.<br> If you're not using Sweet Baby Ray's, then here is a few different ways to spice up your SAUCE.<br> Take some chili flake or one of your favorite hot sauces and add it to your BBQ. <br> Take some Garlic or ginger and mix it into your sauce <br> If you're feeling really crazy add some lime juice and a little pinch of honey(or brownsugar)");
+}
+recipe.prototype.curry = function() {
+  $("#sauceOutput").append("How to prepare your curry: <br> if you have store bought, premade curry, that will be totaly fine for your meal! If you don't have curry on hand, here's a quick way to make it! <br> Take some Onion and Garlic and brown them in a pot(you can also throw ANY veggies that you want in your curry). <br> Once they are browned, add coconut milk or cream of coconut to your pot. <br> Add a curry until desired taste. <br> let simmer for 10-20 minutes until it thickens up and you're ready to go!");
+}
+recipe.prototype.teryaki = function(){
+  $("#sauceOutput").append("How to prepare your Teryaki: <br> In most cases it's just best to use store bought Teryaki!");
+}
+recipe.prototype.tahini = function(){
+  $("#sauceOutput").append("How to prepare your Tahini: <br> In most cases store bought Tahini is rad and super tastey, and way easier to use right out the get-go! However, if you have a food processor and seasame seeds, it's incredibly easy to make your own! <br> First, lightly roast your seasame seeds in a dry pan. <br> Throw the seasame seeds in your food processor with some garlic, lemon juice, olive oil, salt and pepper, blend, and BOOM. You now have some kick-ass Homemade Tahini sauce!")
+}
+recipe.prototype.marinara = function(){
+  $("#sauceOutput").append("How to prepare your marinara: In most cases it's just best to use store bought marinara!");
+}
+
+
+
+>>>>>>> 5ed4cf6606bdfa1356ffc1957d7caa235d3e37c5
 //append the recipe on html
 recipe.prototype.cookBase = function(base){
   if ( base === "rice" ){
@@ -108,3 +135,10 @@ recipe.prototype.cookProtein = function(protein){
     userInput.soyCurl();
   }
 }
+<<<<<<< HEAD
+=======
+//append sauce on html
+recipe.prototype.cookVeggie = function(veggie){
+
+}
+>>>>>>> 5ed4cf6606bdfa1356ffc1957d7caa235d3e37c5
