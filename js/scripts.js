@@ -1,6 +1,14 @@
 //frontend
 $(document).ready(function(){
 
+  $("#firstButton").click(function(event){
+    event.preventDefault();
+  $("#row1").hide();
+  $("#row2").show();
+  $("#row3").show();
+  $("#row4").show();
+  })
+
   $("form#baseOptions").submit(function(event){
     event.preventDefault();
     clearfield();
