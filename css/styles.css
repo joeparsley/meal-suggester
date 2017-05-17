@@ -123,7 +123,6 @@ h3 {
   padding-top: 20px;
   padding-bottom: 20px;
   max-width: 750px;
-  height: 500px;
   font-family: 'Pompiere', cursive;
   font-size: 25px;
   font-weight: lighter;
@@ -135,8 +134,8 @@ h3 {
   border-width: thick;
   border-color: #E5F04C;
   border-radius: 20px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   padding-left: 30px;
   font-family: 'Pompiere', cursive;
   font-size: 30px;
