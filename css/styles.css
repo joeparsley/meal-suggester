@@ -19,6 +19,11 @@ padding-top: 15px;
   padding-left: 20px;
 }
 
+.columns{
+  column-count: 2;
+  list-style: none;
+}
+
 body {
   background-image: url(../img/cutting-board.jpg);
   background-size: auto;
@@ -162,7 +167,64 @@ h3 {
   font-weight: lighter;
 }
 
-.columns{
-  column-count: 2;
-  list-style: none;
+#joe {
+  background: rgba(92,50,62,0.5);
+  border-style: outset;
+  border-width: thick;
+  border-color: #E5F04C;
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: 'Amatica SC', cursive;
+  font-size: 20px;
+  max-width: 475px;
+  max-height: 475px;
+  margin-left: 100px;
+  float: left;
+}
+
+#maria {
+  background: rgba(92,50,62,0.5);
+  border-style: outset;
+  border-width: thick;
+  border-color: #E5F04C;
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: 'Amatica SC', cursive;
+  font-size: 20px;
+  max-width: 475px;
+  margin-right: 100px;
+  float: right;
+}
+
+#halle {
+  background: rgba(92,50,62,0.5);
+  border-style: outset;
+  border-width: thick;
+  border-color: #E5F04C;
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: 'Amatica SC', cursive;
+  font-size: 20px;
+  max-width: 475px;
+  max-height: 475px;
+  margin-left: 100px;
+  float: left;
+}
+
+#kim-lan {
+  background: rgba(92,50,62,0.5);
+  border-style: outset;
+  border-width: thick;
+  border-color: #E5F04C;
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: 'Amatica SC', cursive;
+  font-size: 20px;
+  max-width: 475px;
+  margin-right: 100px;
+  float: right;
 }
