@@ -35,9 +35,16 @@ h3 {
   text-align: center;
 }
 
+a {
+  color: #fff;
+}
+
+a:hover {
+  color: #E5F04C;
+}
 .btn-outline-success{
   font-size: 24px;
-  border-radius: 50%;
+  border-radius: 20%;
   padding: 32px 32px;
   background-color: #E15E32;
   border-style: outset;
@@ -45,6 +52,7 @@ h3 {
   border-width: thick;
   margin-left: auto;
   margin-right: auto;
+  min-width: 150px;
 }
 
 #welcome {
@@ -216,4 +224,8 @@ h3 {
   max-width: 475px;
   margin-right: 100px;
   float: right;
+}
+
+#nav_row {
+
 }
