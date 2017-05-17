@@ -24,6 +24,7 @@ body {
   background-size: auto;
   /*background-repeat: no-repeat;*/
   color: #fff;
+  text-shadow: 4px 4px 6px #000;
 }
 
 h3 {
@@ -39,7 +40,7 @@ h3 {
   padding-top: 20px;
   padding-bottom: 20px;
   font-family: 'Amatica SC', cursive;
-  font-size: 40px;
+  font-size: 30px;
 }
 #instruction{
   background: rgba(92,50,62,0.5);
@@ -138,7 +139,7 @@ h3 {
   padding-bottom: 20px;
   padding-left: 30px;
   font-family: 'Pompiere', cursive;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: lighter;
 }
 
