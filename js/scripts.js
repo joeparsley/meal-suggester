@@ -1,12 +1,10 @@
 //frontend
 $(document).ready(function(){
   $("#firstButton").click(function(){
-
     $("#row1").hide();
     $("#row2").show();
     $("#row3").show();
     $("#infoRow").show();
-    $("#nav_row").hide();
   })
   $("form#vegOptions").submit(function(event){
     event.preventDefault();
