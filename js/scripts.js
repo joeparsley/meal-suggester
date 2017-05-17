@@ -180,5 +180,5 @@ recipe.prototype.prepareSauce = function(sauce){
 }
 
 recipe.prototype.combineItems = function() {
-  $("#totalOutput").append("<h2>Options for how to consume your delicious meal!</h2><h3><strong>Bowl Method:</strong></h3>-Put your Base at the bottom of your bowl. Add your proteins and veggies on top of your base. Drizzle some of that SAUCE on it and you're ready to eat!<br><h3><strong>Wrap Method:</strong></h3>-Take a tortia and put some of your base in the middle. Add some of your proteins and veggies on the side of your base(make sure not to add too much of each of these and you can't actually wrap it all up!). Drizzle some of your SAUCE on it, wrap it like you would a burrito and you're ready to head to flavor town!")
+  $("#totalOutput").append("<h2>Options for how to consume your delicious meal!</h2><h3><strong>Bowl Method:</strong></h3>-Put your Base at the bottom of your bowl. Add your proteins and veggies on top of your base. Drizzle some of that SAUCE on it and you're ready to eat!<br><h3><strong>Wrap Method:</strong></h3>-Take a tortilla and put some of your base in the middle. Add some of your proteins and veggies on the side of your base(make sure not to add too much of each of these and you can't actually wrap it all up!). Drizzle some of your SAUCE on it, wrap it like you would a burrito and you're ready to head to flavor town!")
 }
