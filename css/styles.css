@@ -65,6 +65,8 @@ a {
     /* inline-block space fix */
     margin-right:-4px;
 }
+
+
 #welcome {
   background: rgba(92,50,62,0.5);
   border-style: outset;
@@ -185,7 +187,7 @@ a {
   border-width: thick
 }
 
-#joe {
+#kim-lan {
   background: rgba(92,50,62,0.5);
   border-style: outset;
   border-width: thick;
@@ -196,9 +198,8 @@ a {
   font-family: 'Amatica SC', cursive;
   font-size: 20px;
   max-width: 475px;
-  max-height: 750px;
-  margin-left: 100px;
-
+  margin-left: 200px;
+  margin-right: 200px;
   float: left;
 }
 
@@ -213,9 +214,11 @@ a {
   font-family: 'Amatica SC', cursive;
   font-size: 20px;
   max-width: 475px;
-  margin-right: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
   float: right;
 }
+
 
 #halle {
   background: rgba(92,50,62,0.5);
@@ -229,11 +232,12 @@ a {
   font-size: 20px;
   max-width: 475px;
   max-height: 475px;
-  margin-left: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
   float: left;
 }
 
-#kim-lan {
+#joe {
   background: rgba(92,50,62,0.5);
   border-style: outset;
   border-width: thick;
@@ -244,7 +248,9 @@ a {
   font-family: 'Amatica SC', cursive;
   font-size: 20px;
   max-width: 475px;
-  margin-right: 100px;
+  max-height: 750px;
+  margin-right: 200px;
+  margin-left: 200px;
   float: right;
 }
 
