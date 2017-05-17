@@ -175,8 +175,9 @@ a:hover {
   font-family: 'Amatica SC', cursive;
   font-size: 20px;
   max-width: 475px;
-  max-height: 475px;
+  max-height: 750px;
   margin-left: 100px;
+
   float: left;
 }
 
