@@ -1,16 +1,13 @@
 //frontend
 $(document).ready(function(){
+  $("#firstButton").click(function(){
 
-
-  $("#firstButton").click(function(event){
-    event.preventDefault();
-  $("#row1").hide();
-  $("#row2").show();
-  $("#row3").show();
-  $("#infoRow").show();
+    $("#row1").hide();
+    $("#row2").show();
+    $("#row3").show();
+    $("#infoRow").show();
+    $("#nav_row").hide();
   })
-
-
   $("form#vegOptions").submit(function(event){
     event.preventDefault();
     clearfield();
