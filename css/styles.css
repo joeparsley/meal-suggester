@@ -54,7 +54,18 @@ a:hover {
   margin-right: auto;
   min-width: 150px;
 }
-
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
 #welcome {
   background: rgba(92,50,62,0.5);
   border-style: outset;
