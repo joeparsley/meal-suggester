@@ -25,11 +25,6 @@ $(document).ready(function(){
       userInput.Veggie[i]=$(this).val();
     });
     var veggie_join = userInput.Veggie.join(", ");
-    console.log(userInput);
-    console.log(userInput.Veggie);
-    console.log(userInput.Sauce);
-    console.log(userInput.Base);
-    console.log(userInput.Protein);
     userInput.recipeName(userInput.Protein, userInput.Sauce);
     userInput.cookBase(userInput.Base);
     userInput.cookProtein(userInput.Protein);
