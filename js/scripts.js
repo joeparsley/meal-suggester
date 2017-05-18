@@ -103,7 +103,7 @@ recipe.prototype.curry = function() {
   $("#sauceOutput").append("<h2>How to prepare your curry:</h2>-If you have store bought, premade curry, that will be totaly fine for your meal! If you don't have curry on hand, here's a quick way to make it!<br>-Take some Onion and Garlic and brown them in a pot(you can also throw ANY veggies that you want in your curry).<br>-Once they are browned, add coconut milk or cream of coconut to your pot.<br>-Add a curry powder until desired taste.<br>-Let simmer for 10-20 minutes until it thickens up and you're ready to go!");
 }
 recipe.prototype.teryaki = function(){
-  $("#sauceOutput").append("<h2>How to prepare your Teryaki:</h2><br>-In most cases it's just best to use store bought Teryaki!");
+  $("#sauceOutput").append("<h2>How to prepare your Teryaki:</h2>-In most cases it's just best to use store bought Teryaki!");
 }
 recipe.prototype.tahini = function(){
   $("#sauceOutput").append("<h2>How to prepare your Tahini:</h2>In most cases, store bought Tahini is rad and super tastey, and way easier to use right out the get-go! However, if you have a food processor and seasame seeds, it's incredibly easy to make your own! <br> First, lightly roast your seasame seeds in a dry pan. <br> Throw the seasame seeds in your food processor with some garlic, lemon juice, olive oil, salt and pepper, blend, and BOOM. You now have some kick-ass Homemade Tahini sauce!")

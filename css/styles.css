@@ -252,6 +252,11 @@ a {
   color: hotpink;
 }
 
+#bowl1 {
+  border-radius: 100%;
+
+}
+
 /* Pulse Shrink */
 @-webkit-keyframes hvr-pulse-shrink {
   to {
