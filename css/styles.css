@@ -89,6 +89,11 @@ a {
   font-family: 'Pompiere', cursive;
   font-size: 25px;
   font-weight: lighter;
+  text-align: left;
+}
+
+#instruction p, h2, ul, li {
+  margin-left: 20px;
 }
 
 #infoRow {
@@ -141,6 +146,7 @@ a {
   font-family: 'Pompiere', cursive;
   font-size: 25px;
   font-weight: lighter;
+  float: left;
 }
 
 #veggieStyles {
@@ -253,8 +259,14 @@ a {
 }
 
 #bowl1 {
-  border-radius: 100%;
-
+  border-radius: 10%;
+  width: 60%;
+  border-style: outset;
+  border-width: thick;
+  border-color: #E5F04C;
+  display: block;
+  margin: 0 auto;
+  width: 40%;
 }
 
 /* Pulse Shrink */
