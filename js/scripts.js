@@ -14,6 +14,7 @@ $(document).ready(function(){
     $("#row3").show();
     $("#infoRow").show();
   })
+
   $("form#vegOptions").submit(function(event){
     event.preventDefault();
     clearfield();
@@ -24,11 +25,6 @@ $(document).ready(function(){
     $(":checkbox:checked").each(function(i){
       userInput.Veggie[i]=$(this).val();
     });
-    console.log(userInput);
-    console.log(userInput.Veggie);
-    console.log(userInput.Sauce);
-    console.log(userInput.Base);
-    console.log(userInput.Protein);
     userInput.recipeName(userInput.Protein, userInput.Sauce);
     userInput.cookBase(userInput.Base);
     userInput.cookProtein(userInput.Protein);
@@ -131,8 +127,6 @@ recipe.prototype.recipeName = function(protein, sauce){
   $("#recipe_name").append("THE" + " " + protein.toUpperCase() + " " + sauceNickname.toUpperCase());
 }
 
-
-
 //append the recipe on html
 recipe.prototype.cookBase = function(base){
   if ( base === "rice" ){
@@ -149,6 +143,7 @@ recipe.prototype.cookBase = function(base){
     return userInput.quinoa();
   }
 }
+// APPEND PROTEIN RECIPE TO HTML
 recipe.prototype.cookProtein = function(protein){
   if(protein === "beef"){
     userInput.beef();

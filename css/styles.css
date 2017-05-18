@@ -24,22 +24,6 @@ padding-top: 15px;
   list-style: none;
 }
 
-body {
-  background-image: url(../img/cutting-board.jpg);
-  background-size: auto;
-  color: #fff;
-  text-shadow: 4px 4px 6px #000;
-}
-
-h3 {
-  text-align: center;
-}
-
-a {
-  color: #fff;
-}
-
-
 .btn-outline-success{
   font-size: 30px;
   border-radius: 20%;
@@ -66,6 +50,20 @@ a {
     margin-right:-4px;
 }
 
+body {
+  background-image: url(../img/cutting-board.jpg);
+  background-size: auto;
+  color: #fff;
+  text-shadow: 4px 4px 6px #000;
+}
+
+h3 {
+  text-align: center;
+}
+
+a {
+  color: #fff;
+}
 
 #welcome {
   background: rgba(92,50,62,0.5);
@@ -78,6 +76,7 @@ a {
   font-family: 'Amatica SC', cursive;
   font-size: 30px;
 }
+
 #instruction{
   background: rgba(92,50,62,0.5);
   border-style: outset;
@@ -91,6 +90,7 @@ a {
   font-size: 25px;
   font-weight: lighter;
 }
+
 #infoRow {
   display: none;
   font-family: 'Pompiere', cursive;
@@ -114,9 +114,7 @@ a {
   display: none;
 
 }
-#baseOptions{
 
-}
 #firstButton {
   font-size: 24px;
   border-radius: 50%;
@@ -134,12 +132,9 @@ a {
   border-width: thick;
   border-color: #E5F04C;
   border-radius: 20px;
-
   padding-top: 20px;
   padding-bottom: 20px;
-  /*max-width: 450px;*/
   height: 261px;
-
   padding-top: 1px;
   padding-bottom: 50px;
   height: 320px;
@@ -219,7 +214,6 @@ a {
   float: right;
 }
 
-
 #halle {
   background: rgba(92,50,62,0.5);
   border-style: outset;
@@ -252,10 +246,6 @@ a {
   margin-right: 200px;
   margin-left: 200px;
   float: right;
-}
-
-#nav_row {
-
 }
 
 #joesGithub {
