@@ -2,7 +2,6 @@
 <html>
   <head>
     <link href="https://fonts.googleapis.com/css?family=Amatica+SC|Barrio|Bungee+Outline|Kumar+One+Outline|Londrina+Sketch|Megrim|Pompiere|Sue+Ellen+Francisco|Swanky+and+Moo+Moo|Walter+Turncoat" rel="stylesheet">
-
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
@@ -15,6 +14,7 @@
       <div class="jumbotron">
         <h1>Lazy Parsnips</h1>
       </div>
+      <!--NAVBAR-->
       <div class="row" id="nav_row">
         <div class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 col-xl-6 col-xl-offset-3">
           <center><nav class="navbar navbar-light bg-faded">
@@ -26,13 +26,16 @@
           </nav></center>
         </div>
       </div>
+      <!-- PAGE LOAD WELCOME COLUMN -->
       <div class="row" id="row1">
         <div class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 col-xl-6 col-xl-offset-3" id="welcome">
           <h1>Well hey there!</h1>
           <p>You're probably hungry and don't know what to make huh? Well you're in luck! Click on the button bellow to start entering the ingredients you have on hand, and this app will suggest something tasty for you to eat!</p>
+          <!-- BUTTON FOR WELCOME COLUMN -->
           <a href="#"><button type="button" name="firstButton" class="btn btn-success hvr-buzz" id="firstButton">Let's get Started!</button></a>
         </div>
       </div>
+      <!-- HOW TO USE THE SITE COLUMN -->
       <div class="row" id="infoRow">
       <div class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 col-xl-6 col-xl-offset-3" id="instruction">
           <h2>Instructions on how to use this site:</h2>
@@ -53,52 +56,51 @@
         <form id="baseOptions">
           <div class="col-xs-4" id="baseStyles">
             <div class="form-group">
-            <h3>What base do you have?</h3>
-            <div class="radio">
-              <label>
-                <input type="radio" name="base" value="rice" checked>
-                Rice
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="base" value="beans">
-                Beans
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="base" value="chickpeas">
-                Chickpeas
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="base" value="potatoes">
-                Potatoes
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="base" value="pasta">
-                Pasta
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="base" value="quinoa">
-                Quinoa
-              </label>
-            </div>
+              <h3>What base do you have?</h3>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="base" value="rice" checked>
+                  Rice
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="base" value="beans">
+                  Beans
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="base" value="chickpeas">
+                  Chickpeas
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="base" value="potatoes">
+                  Potatoes
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="base" value="pasta">
+                  Pasta
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="base" value="quinoa">
+                  Quinoa
+                </label>
+              </div>
             </div>
           </div>
-
-          <div class="col-xs-4" id="proteinStyles">
             <!-- USER INPUT FOR PROTEIN OPTIONS -->
+          <div class="col-xs-4" id="proteinStyles">
             <div class="form-group" >
               <h3>What protein do you have?</h3>
               <div class="radio">
-              <label>
+                <label>
                   <input type="radio" name="protein" value="beef" checked>
                 Beef
                 </label>
@@ -135,8 +137,8 @@
               </div>
             </div>
           </div>
+          <!-- USER INPUT FOR SAUCE OPTIONS -->
           <div class="col-xs-4" id="sauceStyles">
-            <!-- USER INPUT FOR SAUCE OPTIONS -->
             <div class="form-group"  >
               <h3>What sauce do you have?</h3>
               <div class="radio">
@@ -175,8 +177,8 @@
       </div>
       <br>
       <div class="row" id="row3">
+        <!-- USER INPUT FOR VEGGIE OPTIONS -->
         <div class="col-xs-6 col-xs-offset-3" id="veggieStyles">
-          <!-- USER INPUT FOR VEGGIE OPTIONS -->
           <h3>What vegetables do you have?</h3><br>
           <form id="vegOptions">
             <div class="form-group">

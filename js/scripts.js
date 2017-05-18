@@ -98,7 +98,7 @@ recipe.prototype.soyCurl = function(){
 
 // instructions on how to cook veggies:
 recipe.prototype.veggies = function(veggie){
-  $("#veggieOutput").append("<h2>How to cook your Veggies!</h2>-Get a pan hot with a little bit of oil.<br>-The veggies you have are: " + " " + veggie + " toss in the veggies that take longest to cook FIRST.<br>-Then, once the veggies you first tossed in are starting to go translucent, toss in the rest of your veggies and season to taste.<br>-Once the rest of the veggies are cooked to your liking, turn the heat off and your veggies are ready to go!");
+  $("#veggieOutput").append("<h2>How to cook your Veggies!</h2>-Get a pan hot with a little bit of oil.<br>-The veggies you have are: " + " " + veggie + ", toss in the veggies that take longest to cook FIRST.<br>-Then, once the veggies you first tossed in are starting to go translucent, toss in the rest of your veggies and season to taste.<br>-Once the rest of the veggies are cooked to your liking, turn the heat off and your veggies are ready to go!");
 }
 // instructions on how to prepare your sauces!
 recipe.prototype.bbq = function(){
